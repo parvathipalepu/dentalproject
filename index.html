@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;  
+    transition: all 1s;
+}
+/* body{
+  background-image: url("./images/Top-banner.jpg");
+} */
+.background{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 10%;
+}
+nav{
+  position: sticky;
+  top: 0px;
+}
+li:hover{
+    border-radius: 50%;
+    background-color: rgb(85, 245, 79);
+    cursor: pointer;
+}
+#head1,#head2,pre{
+  position: absolute;
+  top: 40%;
+}
+#head2{
+  top: 45%;
+  font-size: 60px;
+}
+pre{
+ top: 60%;
+}
+.bimage{
+padding-top: 50px;
+width: 550px;
+height: 500px;
+position: absolute;
+top: 15%;
+left: 55%;
+}
+#img1{
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+#img2,#img3{
+  position: absolute;
+  top: 53%;
+  left: 67%;
+  animation:  MoveUpDown 1s linear infinite;
+}
+#img3{
+  top: 53%;
+  left: 79%;          
+}
+#btn1,#btn2{
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: rgb(226, 62, 144);
+}
+#btn2{
+  left: 20%;
+  background-color: transparent;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+     transform: translateY(0);
+        }
+  50% {
+     transform: translateY(-20px);
+   }
+}
+.section{
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+}
+.card:hover{
+   transform: translateY(-10px);
+}
+.section2,.section3{
+   width: 99%;
+   height: 100vh;
+   top: 200vh;
+   position: absolute;
+}
+.img4{
+    position: absolute;
+    top: 40%;
+    left: 40px;
+    animation:  MoveUpDown 1s linear infinite;
+}
+.section3{
+  top: 300vh;
+  background-color: blue;
+  height: 150vh;
+}
+.svg{
+  width: 150px;
+  height: 130px;
+  padding: 0px;
+}
+.morebtn:hover{
+  background-color:fuchsia;
+}
+.card1:hover{
+  cursor: cell;
+  filter: blur(2px);
+  transform: translateY(0px);
+  transform: all 0sec;
+}
+.section4{
+  position: absolute;
+  top: 450vh;
+  height: 100vh;
+  width: 99%;
+  background-color: rgba(216, 201, 170, 0.788);
+}
+.section5{
+  position: absolute;
+  top: 550vh;
+  height: 200vh;
+  width: 99%;
+  background-image: url("./images/gallery-background.png");
+}
+.gallery:hover{
+  transform: translateY(-10px);}
+.section6{
+  width: 99%;
+  height: 80vh;
+  position: absolute;
+  top: 670vh;
+  background-color: rgb(68, 188, 197);
+}
+.section7{
+  width: 99%;
+  height: 100vh;
+  position: absolute;
+  top: 750vh;
+  background-color:url("./images/Top-banner.jpg");
+  color: black;
+}
+.doctorimg{
+  position: absolute;
+  top: 5%;
+  width: 600px;
+  height: 500px;
+  top: 10%;
+}
+.section8{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 850vh;
+}
+.section9{
+  width: 99%;
+  height: 100vh;
+  background-color: blue;
+  position: absolute;
+  top: 950vh;
+}
+.hover:hover{
+cursor: pointer;
+color: rgb(53, 28, 33);
+border-radius: 10px;
+transform: translateX(5px);
+}
+
+.appoinment-card{
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/dent18.jpg");
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 70vh;
+}
+
+
+</style>
+  </head>
+  <body>
+     <div class="mainsection container-fluid">
+        <!--navbar-->
+                 <div class=" row">
+                  <img src="./images/dent19.jpg" alt="" class="background">
+                 </div>
+              <div class="fixed-top">
+            <nav class=" navbar navbar-expand-lg position-sticky top-0 start-0 bg-danger-subtle">
+              <div class="container position-sticky top-0 start-0">
+                <a class="navbar-brand fw-bold fst-italic fs-3" href="#">
+                  <img src="images/logo.png" alt="" width="150" height="40" class="d-inline-block align-text-top rounded-pill px-3">
+               </a>
+               <button class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation">
+               <i class="fa fa-bars" aria-hidden="true"></i>
+             </button>
+             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav menu-navbar-nav">
+                <li class="nav-item fw-semibold fs-5">
+                  <a class="nav-link active" aria-current="page" href="#section">Home</a>
+                    </li>
+                    <li class="nav-item fw-semibold fs-5">
+                      <a class="nav-link" href="#section2">About</a>
+                    </li>
+                    <li class="nav-item fw-semibold fs-5">
+                      <a class="nav-link" href="#section3">Services</a>
+                    </li>
+                    <li class="nav-item fw-semibold fs-5">
+                      <a class="nav-link" href="#section4">Team</a>
+                    </li>
+                    <li class="nav-item fw-semibold fs-5">
+                      <a class="nav-link" href="#section5">Gallery</a>
+                    </li>
+                    <li class="nav-item fw-semibold fs-5">
+                      <a class="nav-link" href="#section6">Testimonial</a> 
+                    </li>
+                    <li class="nav-item fw-semibold fs-5">
+                      <a class="nav-link" href="#section8">Blog</a>
+                    </li>
+                    <li class="nav-item mt-3 mt-lg-0 fw-semibold fs-5">
+                      <a class="nav-link" href="#section9">Contact</a>
+                    </li>
+                    </ul>
+                  </div>
+              </div>
+            </nav>
+          </div>
+   
+            <div class="heading col-md-6">
+              <h3 class="fs-2 fw-bold px-5 text-white" id="head1">Better Life Through</h3>
+              <h2 class="fw-bold px-5 text-white" id="head2">Better Dentistry</h2>
+              <pre class="fs-5 fw-bold text-white">
+     Join us to a fun and friendly dental environment.
+     Our professionals are working so hard to see smile
+     on your face that you deseve!We are dedicated
+     about our duties</pre>
+     <button type="button" class="btn btn-primary   fs-4 fw-bold rounded-4 border border-dark" id="btn1">Appointment</button>
+     <button type="button" class="btn btn-secondary fs-4 fw-bold rounded-4 border border-dark" id="btn2">Learn More</button>
+            </div>  
+            <div class=" col-md-6">
+              <img src="/images/dent1.png" alt="" class="bimage z-1">
+              <img src="./images/dental2.png" alt="img1" class="pt-5 w-35 z-3" id="img1">
+              <img src="./images/dent3.png" alt="img2" id="img2" class="z-3">
+              <img src="./images/dent4.png" alt="img3" id="img3" class="z-3">
+            </div>        
+          </div>
+        </div>
+     
+      <!--cards-->
+        <section>
+          <div class="section container" id="section">
+            <div class="row col-12 p-5 m-5 d-flex justify-content-between">
+              <!--card1-->
+              <div class="card card border border-dark rounded-4 shadow-lg mt-5" style="width: 18rem;">
+                <img src="/images/dent25.png" class="card-img-top" alt="card1">
+                <div class="card-body">
+                  <h5 class="card-title fs-4 fw-bold text-center">24/7 Services</h5>
+                  <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary fs-3 fw-bold text-center">For More</a>
+                </div>
+              </div>
+              <!--card2-->
+              <div class="card card border border-dark rounded-4 shadow-lg mt-5" style="width: 18rem;">
+                <img src="/images/dent26.png" class="card-img-top" alt="card2">
+                <div class="card-body">
+                  <h5 class="card-title fs-4 fw-bold text-center">Emergency Service</h5>
+                  <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary fs-3 fw-bold text-center">For More</a>
+                </div>
+              </div>
+              <!--card3-->
+              <div class="card border border-dark rounded-4 shadow-lg mt-5" style="width: 18rem;">
+                <img src="/images/dent27.png" class="card-img-top" alt="card3">
+                <div class="card-body">
+                  <h5 class="card-title fs-4 fw-bold text-center">Easy Appointment</h5>
+                  <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary fs-4 fw-bold text-center">For More</a>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </section>
+   
+        <section class="section2" id="section2">
+          <div class="container mt-5">
+            <div class="row">
+         <!--image-->
+              <div class="col-md-6 ">
+              <img src="./images/dent5.png" alt="banner1" class="w-75">
+              <img src="./images/dent6.png" alt=""  class="img4">
+              </div>
+           <!--text-->
+       <div class="col-md-6">
+                <h1 class="fs-1 fw-bold text-center">Welcome to a Family</h1>
+                <p class="fs-5 fw-semibold">lorum luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                <div class="infocards">
+          <!--card1&2-->    
+                <div class="container text-center">
+                  <div class="row m-1 p-2">
+                    <div class="col border border-dark rounded-4 p-4 ms-2 fw-semibold fs-4 ">
+                     <h1>600+</h1>
+                     <p>Happy Patients</p>
+                    </div>
+                    <div class="col border border-dark rounded-4 p-4 ms-2 fw-semibold fs-4">
+                      <h1> 75+</h1>
+                      <p>Qualified Doctors</p>
+                    </div>
+                  </div>
+                </div>
+         <!--card3&4-->
+                <div class="container text-center ">
+                  <div class="row m-1 p-1">
+                    <div class="col border border-dark rounded-4 p-4 ms-2 fw-semibold fs-4">
+                     <h1>35+</h1>
+                     <p>Years Experience</p>
+                    </div>
+                    <div class="col border border-dark rounded-4 p-4 ms-2 fw-semibold fs-4">
+                      <h1>65+</h1>
+                      <p>Dental Awards</p>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+         </div>
+              </div>
+            </div>
+          </div>
+      </section>
+   
+   <!--Services-->
+      <section class="section3" id="section3">
+        <div class="container">
+          <h1 class="text-center fw-bold fs-1 mt-5">Our Services</h1>
+          <!--row1-->
+          <div class="row col-12 p-2 m-3 d-flex justify-content-between">
+            <!--card1-->
+            <div class="card1 bg-transparent card border border-dark rounded-4 shadow-lg text-white" style="width: 18rem;">
+              <img src="/images/dent7.svg" class="svg card-img-auto w-50" alt="card1" >
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold text-center">Complete Dentistry</h5>
+                <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="morebtn p-2 fs-5 fw-bold text-dark rounded-4 ">Read More</button>
+               </div>
+            </div>
+            <!--card2-->
+            <div class="card1 bg-transparent card border border-dark rounded-4 shadow-lg text-white" style="width: 18rem;">
+              <img src="/images/dent8.svg" class="svg card-img-auto w-50" alt="card2">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold text-center">Dental Selants</h5>
+                <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="morebtn p-2 fs-5 fw-bold text-dark rounded-4 ">Read More</button>
+              </div>
+            </div>
+            <!--card3-->
+            <div class="card1 bg-transparent border border-dark rounded-4 shadow-lg text-white" style="width: 18rem;">
+              <img src="/images/dent9.svg" class="svg card-img-auto w-50" alt="card3">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold text-center">Dental Dictionary</h5>
+                <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="morebtn p-2 fs-5 fw-bold text-dark rounded-4 ">Read More</button>
+               </div>
+            </div>  
+          </div>
+   
+          <!--row2-->
+          <div class="row col-12 p-2 m-3 d-flex justify-content-between ">
+            <!--card1-->
+            <div class="card1 bg-transparent card border border-dark rounded-4 shadow-lg text-white" style="width: 18rem;">
+              <img src="/images/dent10.svg" class="svg card-img-top w-50" alt="card1">
+              <div class="card-body">
+                <h5 class="card-title fs-3 fw-bold text-center">Dental Implants</h5>
+                <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="morebtn p-2 fs-5 fw-bold text-dark rounded-4 ">Read More</button>
+              </div>
+            </div>
+            <!--card2-->
+            <div class="card1 bg-transparent card border border-dark rounded-4 shadow-lg text-white" style="width: 18rem;">
+              <img src="/images/dental-5.svg" class="svg card-img-top w-50" alt="card2">
+              <div class="card-body">
+                <h5 class="card-title fs-3 fw-bold text-center">Oral Surgery</h5>
+                <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="morebtn p-2 fs-5 fw-bold text-dark rounded-4 ">Read More</button>
+              </div>
+            </div>
+            <!--card3-->
+            <div class="card1 bg-transparent border border-dark rounded-4 shadow-lg text-white" style="width: 18rem;">
+              <img src="/images/dent11.svg" class="svg card-img-top w-50" alt="card3">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold text-center">General Dentistry</h5>
+                <p class="card-text fw-semibold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <button class="morebtn p-2 fs-5 fw-bold text-dark rounded-4 ">Read More</button>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+  <!--Our Dentists-->
+      <section class="section4" id="section4">
+      <div class="container">
+        <h1 class="col-12 text-center fw-bold fs-1 " id="services">Our Dentists</h1>
+         
+        <div class="row col-12 p-3 m-2 d-flex justify-content-around">
+          <!--doctor1-->
+          <div class="col-md-3 card card border border-dark rounded-4 shadow-lg " style="width: 18rem;">
+            <img src="./images/dent12.png" class="card-img-top" alt="card1">
+            <div class="card-body">
+              <h5 class="card-title fs-4 fw-bold text-center">Darry Milin</h5>
+              <p class="card-text fw-semibold text-center"> Oral Surgeon</p>
+              <a href="#"> <i class="fa-brands fa-whatsapp fs-4 border p-3"></i></a>
+              <a href="#"> <i class="fa-brands fa-twitter  fs-4 border p-3"></i></a>
+              <a href="#"> <i class="fa-brands fa-google  fs-4 border  p-3"></i></a>
+            </div>
+          </div>
+   
+           <!--doctor2-->
+           <div class="col-md-3  card card border border-dark rounded-4 shadow-lg" style="width: 18rem;">
+            <img src="./images/dentAL-17.png" class="card-img-top" alt="card1">
+            <div class="card-body">
+              <h5 class="card-title fs-4 fw-bold text-center">Salman Ahmed</h5>
+              <p class="card-text fw-semibold text-center"> Oral Surgeon</p>
+              <a href="#"> <i class="fa-brands fa-whatsapp fs-4 border p-3"></i></a>
+              <a href="#"> <i class="fa-brands fa-twitter  fs-4 border p-3"></i></a>
+              <a href="#"> <i class="fa-brands fa-google  fs-4 border  p-3"></i></a>
+            </div>
+          </div>
+   
+           <!--doctor3-->
+           <div class="col-md-3  card card border border-dark rounded-4 shadow-lg" style="width: 18rem;">
+            <img src="./images/dent13.png" class="card-img-top" alt="card1">
+            <div class="card-body">
+              <h5 class="card-title fs-4 fw-bold text-center">Santa Bink</h5>
+              <p class="card-text fw-semibold text-center"> Oral Surgeon</p>
+              <a href="#"> <i class="fa-brands fa-whatsapp fs-4 border p-3 "></i></a>
+              <a href="#"> <i class="fa-brands fa-twitter  fs-4 border p-3"></i></a>
+              <a href="#"> <i class="fa-brands fa-google  fs-4 border  p-3"></i></a>
+            </div>
+          </div>
+   
+        </div>    
+      </div>
+      </section>
+   
+      <!--Our Gallery-->
+        <section class="section5" id="section5">
+          <div class="continer">
+            <h1 class="text-center fw-bold fs-1 mt-3 text-">Our Gallery</h1>
+            <div class="container text-center">
+              <div class="row m-5 p-2 ">
+                <div class="col-sm-4"><img src="./images/dent14.jpg" alt="" class="gallery rounded-4 ps-3 w-100"></div>
+                <div class="col-sm-4"><img src="./images/dent15.jpg" alt="" class="gallery rounded-4 ps-3 w-100"></div>
+                <div class="col-sm-4"><img src="./images/dental-18.jpg" alt="" class="gallery rounded-4 ps-3 w-100"></div>
+              </div>
+              <div class="row m-5">
+                <div class="col-sm-4"><img src="/images/dent17.jpg" alt="" class="gallery rounded-4 ps-3 w-100"></div>
+                <div class="col-sm-8"><img src="/images/dent16.jpg" alt="" class="gallery rounded-4 ps-3 w-100"></div>
+              </div>
+            </div>  
+          </div>
+        </section>
+  <!--testimonial-->
+        <section class="section6" id="section6">
+          <div class="container">
+            <h1 class="text-center fw-bold fs-1 mt-5 text-dark">Testimonials</h1>
+            <div class="row p-5">
+              <div class="col-md-4 card bg-white card border border-dark rounded-4 shadow-lg text-white p-3" style="width: 18rem;">
+                <img src="./images/dent20.png" class="svg card-img-top w-100" alt="card1">
+                <div class="card-body">
+                  <h1 class="fw-bold fs-2 text-center text-dark">Aliceano Colby</h1>
+                 <p class="fw-semibold fs-5 text-center text-dark" >CEO of Prime IT</p>
+                </div>
+              </div>
+   
+              <div class="col-md-8">
+                <h1 class="text-center pt-5 mt-2">Awesome Work</h1>
+                <p class="ps-5 pt-5 fs-4 fw-semibold text-white">“They really took my individual case to heart. Their team is very helpful. They all work together in an impressive way to make sure that my needs were met and I walked out pain free.”</p>
+              </div>
+          </div>
+        </section>
+   
+        <section class="section7" id="section7">
+         <div class="container-fluid">
+          <div class="row appoinment-card p-5">
+        <!--paragraph-->
+            <div class="col-lg-4 col-sm-4 col-md ">
+              <p class="fw-bold fs-2 text-white pt-5">Request your appointment and start your smile makeover!</p>
+              <button class="p-2 text-center bg-danger fs-4 fw-bold text-white rounded-4" title="click here">Request Appointment</button>
+            </div>
+         <!--doctorimage-->
+         <!-- <div class="col-sm-8 mt-5 pt-5">
+          <img src="./images/dent18.jpg" alt="" class="doctorimg">
+        </div> -->
+          </div>
+         </div>
+        </section>
+  <!--blog-->
+        <section class="section8" id="section8">
+          <div class="container">
+            <h1 class="col-12 text-center fw-bold fs-1 mt-2" id="services">Latest Blog</h1>
+             
+            <div class="row col-12 p-5 m-2 d-flex justify-content-around">
+              <!--blog1-->
+              <div class="col-md-3 card card border border-dark rounded-4 shadow-lg " style="width: 18rem;">
+                <img src="./images/dent21.jpg" class="card-img-top" alt="card1">
+                <div class="card-body">
+                 <h1 class="fw-bold fs-4 text-center">Dental Insurance with Benefits</h1>
+                 <p>BY ADMIN - FEBRUARY 18, 2018</p>
+                 <p class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nostrum.</p>
+                 <button class="fw-bold fs-4 text-center bg-success ms-5 text-white rounded-4">Read More</button>
+                </div>
+              </div>
+   
+              <div class="col-md-3 card card border border-dark rounded-4 shadow-lg " style="width: 18rem;">
+                <img src="./images/dent22.jpg" class="card-img-top" alt="card1">
+                <div class="card-body">
+                  <h1 class="fw-bold fs-4 text-center">Dental Insurance with Benefits</h1>
+                  <p>BY ADMIN - FEBRUARY 18, 2018</p>
+                  <p class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nostrum.</p>
+                  <button class="fw-bold fs-4 text-center bg-success ms-5 text-white rounded-4">Read More</button>
+                </div>
+              </div>
+   
+              <div class="col-md-3 card card border border-dark rounded-4 shadow-lg " style="width: 18rem;">
+                <img src="./images/dent23.jpg" class="card-img-top" alt="card1">
+                <div class="card-body">
+                  <h1 class="fw-bold fs-4 text-center">Dental Insurance with Benefits</h1>
+                 <p>BY ADMIN - FEBRUARY 18, 2018</p>
+                 <p class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nostrum.</p>
+                 <button class="fw-bold fs-4 text-center bg-success ms-5 text-white rounded-4">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+   
+   
+        <!--Contact-->
+        <section class="section9" id="section9">
+          <div class="container">
+            <div class="row mt-5">
+             <!--col1-->
+              <div class="col-sm-3 mt-5 ">
+                <h1 class="hover fw-bold fs-3 text-white">Clinic Location</h1>
+                <p class="hover fw-semibold fs-6 pt-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti explicabo voluptate quam ex eum!.</p>
+                <h3 class="hover fw-bold fs-5 text-white">Address: South City,London</h3>
+                <h3 class="hover fw-bold fs-5 text-white">Ph No: +2334567</h3>
+                <h3 class="hover fw-bold fs-5 text-white">Email: info@example.com</h3>
+              </div>
+              <!--col2-->
+              <div class="col-sm-3 mt-5 ps-5">
+              <h1 class="hover fw-bold fs-3 text-white">More Links</h1>
+               <p class="hover fw-semibold fs-5 text-white">About Us</p>
+               <p class="hover fw-semibold fs-5 text-white">Our Office</p>
+               <p class="hover fw-semibold fs-5 text-white">Delivery</p>
+               <p class="hover fw-semibold fs-5 text-white">Our Store</p>
+               <p class="hover fw-semibold fs-5 text-white">Garantee</p>
+               <p class="hover fw-semibold fs-5 text-white">Buy Gift Card</p>
+               <p class="hover fw-semibold fs-5 text-white">Return Policy</p>
+              </div>
+              <!--col3-->
+              <div class="col-sm-3 mt-5 ps-5">
+              <h1 class="hover fw-bold fs-3 text-white">More Links</h1>
+               <p class="hover fw-semibold fs-5 text-white">About Us</p>
+               <p class="hover fw-semibold fs-5 text-white">Our Office</p>
+               <p class="hover fw-semibold fs-5 text-white">Delivery</p>
+               <p class="hover fw-semibold fs-5 text-white">Our Store</p>
+               <p class="hover fw-semibold fs-5 text-white">Garantee</p>
+               <p class="hover fw-semibold fs-5 text-white">Buy Gift Card</p>
+               <p class="hover fw-semibold fs-5 text-white">Return Policy</p>
+              </div>
+              <!--col4-->
+              <div class="col-sm-3 mt-5 ps-5">
+                <h1 class="hover fw-bold fs-3 text-white">News Letter</h1>
+                <input type="text" class="hover mt-5 p-1 fw-bold  text-center bg-gradient text-white" placeholder="Enter Your Email Here">
+                <button type="button" class="btn mt-3 mb-3 btn-danger">Subcribe</button>
+                <p class="hover fw-semibold fs-5 mt-5 text-center text-white">Stay Connected</p>
+                <a href="#"> <i class="fa-brands fa-whatsapp fs-4 border p-3 ms-1 text-dark"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter fs-4 border  p-3 ms-1 text-dark"></i></a>
+                <a href="#"> <i class="fa-brands fa-google  fs-4 border  p-3 ms-1 text-dark"></i>
+                </a>
+              </div>
+            </div>
+           <div class="container">
+            <div class="row p-5">
+              <p class="footer text-center text-white fw-semibold fs-6 mb-2 bg-dark p-3">Copyright © WEB-DEVELOPMENT. All Rights Reserved</p>
+            </div>
+          </div>
+          </div>
+         
+        </section>
+  </body>
+  </html>
+  
